@@ -10,7 +10,6 @@ emails = re.findall(email_pattern, text)
 phone_pattern = r'\b010[-. ]\d{4}[-. ]\d{4}\b'
 phones = re.findall(phone_pattern, text)
 
-# 3. 학번과 학과 추출
 student_pattern = r'\[(202\d{6})\s*/\s*([^\]]+)\]'
 students = re.findall(student_pattern, text)
 
